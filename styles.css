@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 2.5rem;
+  transition: background-color 0.2s, opacity 0.2s;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.controls {
+  margin: 10px;
+}
+
+.yellow { background-color: rgb(225, 172, 49); }
+.green  { background-color: rgb(37, 168, 168); }
+.red    { background-color: rgb(226, 51, 127); }
+.purple { background-color: rgb(131, 45, 212); }
+
+.flash { opacity: 0.5; }
+
+.userflash {
+  background-color: #ffffff;
+  border-color: black;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  transform: scale(0.95);
+}
+
+#dark-toggle {
+  padding: 6px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
+body.dark-mode .btn {
+  border-color: white;
+}
+
+.game-over {
+  background-color: red !important;
+}
